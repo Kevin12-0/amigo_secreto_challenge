@@ -3,25 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    
     <title>Document</title>
   </head>
   <body>
-    <input class="text" id="name" class="validate" />
-    <button
-      onclick="agregarUsuario()"
-      type="submit"
-      class="btn waves-effect waves-light"
-    >
-      Agregar
-    </button>
-    <p>Lista</p>
+    <section class="section">
+      <div class="container">
+        <label for="name" class="label">Nombre de tu amigo</label>
+          <input class="input" id="name" class="validate" type="text" placeholder="Nombre de tu amigo"/>
+          
+          <div class="input-field col s6">
+            <button
+              onclick="agregarUsuario()"
+              type="submit"
+              class="button is-primary"
+            >
+              Agregar
+            </button>
+         
+
+    <label class="label">Lista de Amigos</p>
     <ol id="Lista"></ol>
-    <button onclick="sorteo()">Sorteo</button>
+    <button onclick="sorteo()" class="button is-primary">Sorteo</button>
+      </div>
+    </section>
   </body>
   <script src="js/app.js" id="name"></script>
 </html>
